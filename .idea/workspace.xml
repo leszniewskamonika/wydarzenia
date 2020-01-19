@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="95fc4ea3-b7a3-4841-8293-0329fff5e0af" name="Default Changelist" comment="">
-
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/Class/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/Class/Comment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/Class/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/Class/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PHP/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP/index.php" afterDir="false" />
-
       <change afterPath="$PROJECT_DIR$/.phpunit.result.cache" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/PHP/MyLib.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/PHP/testy_strony.php" afterDir="false" />
@@ -27,7 +21,6 @@
       <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wydarzenia.sql" beforeDir="false" afterPath="$PROJECT_DIR$/wydarzenia.sql" afterDir="false" />
-
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -143,8 +136,7 @@
       <workItem from="1578744095877" duration="13517000" />
       <workItem from="1579081795746" duration="14323000" />
       <workItem from="1579355547419" duration="7847000" />
-      <workItem from="1579367114722" duration="27090000" />
-      <workItem from="1579468680107" duration="3417000" />
+      <workItem from="1579367114722" duration="26648000" />
     </task>
     <task id="LOCAL-00001" summary="Dodanie prostego testu sprawdzającego poprawne działanie testowania.">
       <created>1579107963919</created>
@@ -153,14 +145,7 @@
       <option name="project" value="LOCAL" />
       <updated>1579107963919</updated>
     </task>
-    <task id="LOCAL-00002" summary="wszytsko na raz">
-      <created>1579394047191</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1579394047191</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,7 +166,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Dodanie prostego testu sprawdzającego poprawne działanie testowania." />
-    <MESSAGE value="wszytsko na raz" />
-    <option name="LAST_COMMIT_MESSAGE" value="wszytsko na raz" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dodanie prostego testu sprawdzającego poprawne działanie testowania." />
   </component>
 </project>

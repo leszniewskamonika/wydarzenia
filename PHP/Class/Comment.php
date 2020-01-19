@@ -44,14 +44,14 @@ class Comment
     }
 
     public function getAllComments($filter) {
-    $query = 'SELECT * FROM komentarze WHERE id_wpis = "'.$filter.'"';
-    $result = $this->db->query($query) or die($this->db->error);
-    $animal_data = [];
-    while($content = $result->fetch_array(MYSQLI_ASSOC)){
-        $animal_data[] = $content;
+        $query = 'SELECT * FROM komentarze, user WHERE id_wpis = "'.$filter.'"';
+        $result = $this->db->query($query) or die($this->db->error);
+        $animal_data = [];
+        while($content = $result->fetch_array(MYSQLI_ASSOC)){
+            $animal_data[] = $content;
+        }
+        return $animal_data;
     }
-    return $animal_data;
-}
 
 }
 

@@ -16,16 +16,13 @@ class User
     private $_name;
     private $_username;
     private $_password;
-    private $_filter;
 
 
     public function getId()
     {
         return $this->_id;
     }
-    public function setFilter($filter) {
-        $this->_filter = $filter;
-    }
+
     public function setID($id) {
         $this->_id = $id;
     }
@@ -125,15 +122,6 @@ class User
         }
     }
 
-    public function getAllUser($filter) {
-        $query = 'SELECT * FROM user  WHERE id = "'.$filter.'";';
-        $result = $this->db->query($query) or die($this->db->error);
-        $animal_data = [];
-        while($content = $result->fetch_array(MYSQLI_ASSOC)){
-            $animal_data[] = $content;
-        }
-        return $animal_data;
-    }
 
 }
 ?>

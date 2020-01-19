@@ -3,25 +3,9 @@
 include "Class/Filter.php";
 include "Class/Comment.php";
 include "Class/DBConnection.php";
-include "Class/User.php";
 $filter = new Filter();
 $comment = new Comment();
 $event_display = $filter->getAllEvents();
-
-$user = new User();
-if(!empty($_SESSION['id'])){
-    $uid = $_SESSION['id'];
-
-}
-if ($user->getSession()===FALSE) {
-    header("location:login.php");
-}
-if (isset($_GET['q'])) {
-    $user->logout();
-    header("location:login.php");
-}
-$user->setID($uid);
-$userInfo = $user->getUserInfo();
 ?>
     <div class="container-fluid hero-container">
         <div class="row">
@@ -82,20 +66,13 @@ $userInfo = $user->getUserInfo();
                                         ";
                     } else {
                         //echo $comment_display['komentarz'];
-
                         foreach ( $comment_display as $value) {
-                            $user_filtr = $value['id_user'];
-                            $user ->setFilter($user_filtr);
-                            $user_display = $user->getAllUser($user_filtr);
-                            foreach ($user_display as $mag){
-                                echo $mag['login'];
-                            }
-                            echo ' napisał:  ' . $value['komentarz'].' <br>';
+                            echo $value['login'] . ' napisał:  ' . $value['komentarz'].' <br>';
                         };
                     };
 
 
-                        echo ' <a href=\'addComment.php?id_wpis=' . $row["id_wpis_w"] . '&id_user=' . $userInfo["id"] . '\'>Dodaj komentarz</a>
+                        echo ' <a href=\'addComment.php?id_wpis=' . $row["id_wpis_w"] . '&id_user=' . $row["id_user"] . '\'>Dodaj komentarz</a>
                                 <p>_____________________________________________________________</p>
                             </div> 
                         </div>';
